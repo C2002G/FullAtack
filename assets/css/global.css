@@ -16,13 +16,13 @@ id é # */
     padding: 1rem;
 }
 
-ol.pokemons li img{
+.pokemon .detail img{
     max-width: 100%;
-    height: 100px;
-    align-self: flex-end; /* alinha a imagem ao final do elemento */
+    height: 70px;
+    
 }
 
-ol.pokemons{
+.pokemons{
     display: grid;
     grid-template-columns: 1fr 1fr;
     list-style: none;
@@ -30,12 +30,45 @@ ol.pokemons{
     margin: 0;
 
 }
-ol.pokemons li{
+
+.pokemon .number{
+    color: black;
+    opacity: 0.3;
+    text-align: right;
+    font-size: .625rem;
+}
+.pokemon .detail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pokemon .detail .types{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.pokemon .detail .types .type{
+    background-color: #61e1ca;
+    color: #fff;
+    padding: 0.25rem 1rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    border-radius: 1rem;
+}
+
+.pokemon{
     margin: .5rem;
     padding: 2rem 1rem;
-    background-color: #14A06F;
-    color: #fff;
+    background-color: #49D0B0;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
+}
+
+.pokemon .name{
+    color: #fff;
+    margin-bottom: .25rem;
 }
